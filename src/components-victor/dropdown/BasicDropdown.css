@@ -1,0 +1,40 @@
+@import url("../../index.css");
+
+.dropdown-button .btn, .dropdown-button .btn-primary {
+  background-color: var(--shamrock-green);
+  color: white;
+  outline-color: none;
+  border: var(--bs-btn-border-width) solid var(--emerald);
+}
+
+.dropdown-button .btn:hover,
+.dropdown-button .btn-primary:hover {
+  background-color: var(--fern-green);
+  border: var(--bs-btn-border-width) solid var(--fern-green);
+}
+
+.dropdown-button .btn:active,
+.dropdown-button .btn-primary:active {
+  --bs-btn-active-bg: var(--shamrock-green);
+  --bs-btn-active-border-color: var(--emerald);
+  outline-color: none;
+}
+
+
+.dropdown-button .btn-primary,
+.dropdown-button .btn-primary:focus,
+.dropdown-button .btn-primary:active,
+.dropdown-button .btn-primary:hover {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.dropdown-button .btn-check:checked+.btn,
+.dropdown-button .btn.active,
+.dropdown-button .btn.show,
+.dropdown-button .btn:first-child:active,
+.dropdown-button :not(.btn-check)+.btn:active {
+  --bs-btn-active-bg: var(--shamrock-green);
+  --bs-btn-active-border-color: var(--emerald);
+  outline-color: none;
+}

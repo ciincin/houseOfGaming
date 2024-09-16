@@ -1,0 +1,89 @@
+@import url("../../index.css");
+
+.footer {
+  background-color: var(--feldgrau);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.footer-nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.footer-nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 250ms ease-in-out;
+}
+
+.footer-nav ul li a:hover {
+  text-decoration: underline;
+  color: #535353;
+}
+
+/* cambiar colores de los desplegables! */
+.footer-accordion .accordion-item{
+  background-color: var(--feldgrau);
+  border-color: white;
+  padding: 10px 50px;
+  color: white;
+}
+
+.footer-accordion button{
+  background-color: var(--feldgrau);
+  color: white;
+  --bs-accordion-btn-icon: url(../../assets/icons/chevron-abajo.svg);
+  --bs-accordion-btn-active-icon: url(../../assets/icons/chevron-abajo.svg);
+  --bs-accordion-active-color: var(--light-green);
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.footer-accordion .svg-icon{
+  color: white;
+}
+
+.footer-accordion .accordion-button:not(.collapsed) {
+background-color: var(--feld-grau);
+box-shadow: none;
+}
+
+.accordion-body{
+  display: flex;
+}
+.button-container{
+  display: flex;
+  width: fit-content;
+  height: auto;
+  gap: 30px;
+  margin: 0 auto;
+}
+.disclaimer{
+  margin-top: 2rem;
+}
+
+
+@media (max-width: 700px) {
+.button-container{
+display: flex;
+height: auto;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+/* flex-direction: column; */
+}
+
+}

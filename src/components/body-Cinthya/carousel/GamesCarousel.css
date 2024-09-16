@@ -1,0 +1,91 @@
+@import url("../../../index.css");
+
+.game-div-wrapper {
+  padding-bottom: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.div-carousel-slide{
+  text-align: center;
+}
+
+.game-title {
+  display: flex;
+  justify-content: left;
+  margin: 1rem;
+  padding-bottom: 0.5rem;
+  color: var(--light-green);
+  border-bottom: 1px solid var(--light-green);
+}
+
+.carousel-item-custom {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.carousel-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  /* Adjust the blur radius as needed */
+  z-index: 1;
+}
+
+.carousel-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(111, 110, 110, 0.5);
+  /* Adjust the overlay color and opacity as needed */
+}
+
+.carousel-caption {
+  position: relative;
+  z-index: 3;
+}
+
+.carousel-indicators {
+  margin-bottom: -1.25rem;
+}
+
+.carousel-img-wrapper img {
+  width: 32rem;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  /* Ensure it's on top of the background but below the text */
+}
+
+
+/* Tablet view */
+@media (max-width: 850px) {
+  .game-title {
+    justify-content: center;
+  }
+
+}
+
+/* Mobile view */
+@media (max-width: 420px) {
+  .carousel-img-wrapper img {
+    width: 23rem;
+    height: auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .game-title {
+    justify-content: center;
+  }
+
+}

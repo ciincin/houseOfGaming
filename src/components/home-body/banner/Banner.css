@@ -1,0 +1,39 @@
+@import url("../../../index.css");
+
+
+/* .banner-container{
+  width: 100%;
+  height: auto;
+  margin-top: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+  height: fit-content;
+  background-size: cover; /* Make the background image cover the entire container */
+  /* background-position: center; 
+  background-image: url("../../../assets/banners/Banner1200.png");
+} */
+
+.banner {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.banner-image {
+  margin-top: 104px;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,119 @@
+@import url("../../../index.css");
+
+
+
+.most-div-wrapper {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+}
+
+.most-title {
+    display: flex;
+    justify-content: left;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+    color: var(--light-green);
+    border-bottom: 1px solid var(--light-green);
+
+}
+
+.most-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 6rem;
+
+}
+
+.most-card {
+    background-color: var(--fern-green);
+    flex: 1 1 calc(25% - 2rem);
+    max-width: 20rem;
+    /* Default: 4 columns */
+}
+
+
+.most-card-title {
+    color: white;
+    font-weight: 700;
+}
+
+.most-card-text {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.most-div-flex {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+
+}
+
+.most-see-more-btn {
+    border-radius: 0.75rem;
+    border: none;
+    box-shadow: 2px 2px 5px var(--davys-gray);
+    background-color: var(--aureolin);
+    width: 8rem;
+    height: 2rem;
+    color: var(--davys-gray);
+    font-weight: 600;
+}
+
+.most-see-more-btn:hover {
+    background-color: var(--old-gold);
+    color: white;
+}
+
+.most-text-muted {
+    color: var(--bs-secondary-bg) !important
+}
+
+/* Tablet view */
+@media (max-width: 1010px) {
+    .most-title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .most-card-group {
+        gap: 1rem;
+        width: auto;
+        margin: 1rem 2rem;
+    }
+
+    .most-card {
+        flex: 1 1 calc(45% - 2rem) !important; /* 2 columns */
+        border-radius: 0.50rem !important;
+        overflow: hidden !important;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+
+    .most-card-group-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .most-title {
+        display: flex;
+        justify-content: center;
+    }
+    .most-card-group {
+        gap: 0.5rem;
+        width: auto;
+        margin: 1rem 4rem;
+    }
+
+    .most-card {
+        flex: 1 1 calc(100% - 2rem) !important; /* 2 columns */
+        /* 1 column */
+    }
+}
