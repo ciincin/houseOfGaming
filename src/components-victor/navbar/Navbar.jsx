@@ -25,7 +25,7 @@ function Navbar() {
     <nav className="navbar">
       <div className='no-list-style'>
         <div className="navbar-brand">
-          <a href="/"><img src="./src/assets/logos/logoSVG.svg" width={150} alt="logo" /></a>
+          <a href="/"><img src="https://svgshare.com/i/1AUc.svg" width={150} alt="logo" /></a>
         </div>
         <div className="navbar-dropdown">
         <BasicDropdown btnName={"Links"} objectsArray={navbarDropdown} />
