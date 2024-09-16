@@ -68,9 +68,11 @@
     height: 100%;
     padding-left: 1rem;
     border: none;
-    background-color: var(--davys-gray);
-    color: white;
     border-radius: 0.5rem;
+}
+
+.search-input input:focus {
+    outline-width: 0;
 }
 
 .dropdown-button {
