@@ -3,7 +3,7 @@ export const themeJson = {
   "colorPalette": "dark",
   "isPanelless": false,
   // "backgroundImage": "https://api.surveyjs.io/private/Surveys/files?name=1d4fbea3-59f8-4f29-be97-3e764d2539a0",
-  "backgroundImage": "src/assets/background/background.webp",
+  "backgroundImage": "https://i.imgur.com/oEfJmK3.jpeg",
   "backgroundOpacity": 1,
   "backgroundImageAttachment": "scroll",
   "backgroundImageFit": "cover",
