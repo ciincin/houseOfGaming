@@ -1,7 +1,7 @@
 export const json = {
     "title": "House of gaming - Game survey",
     "description": "This survey was created to recommend you different free to play videogames depending on your answers.",
-    "logo": "./src/assets/logos/logo-mano.png",
+    "logo": "https://i.postimg.cc/Hn5CYvHm/logo-mano.png",
     "logoWidth": "500px",
     "logoHeight": "300px",
     "logoPosition": "right",
