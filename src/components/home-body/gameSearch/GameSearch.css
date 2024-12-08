@@ -31,42 +31,9 @@
     gap: 0.5rem
 }
 
-.search-icon{
-    width:48px;
-    height: 48px;
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out;
-}
-
-.search-icon:hover{
-   transform: scale(1.2);
-}
-
-.search-input {
-    /* align-self: center;
-    height: 2.5rem; */
-    overflow: hidden; /* Ocultar contenido extra durante la animación */
-    height: 0;       /* Iniciar con altura 0 */
-    opacity: 0;      /* Iniciar con opacidad 0 (invisible) */
-    transition: height 0.5s ease, opacity 0.5s ease; /* Transición suave */
-}
-
-.search-input.show {
-    height: 2.5rem;
-    opacity: 1;
-}
-
-.search-input.hide{
-    /* width: 1px; */
-    width: 100%;
-    height: 0;
-    opacity: 0;
-}
 
 .search-input input{
-    width: 100%;
-    height: 100%;
-    padding-left: 1rem;
+    padding: 0.35rem 1rem;
     border: none;
     border-radius: 0.5rem;
 }

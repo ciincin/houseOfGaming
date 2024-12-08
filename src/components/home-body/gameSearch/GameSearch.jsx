@@ -3,13 +3,11 @@ import GameCard from "../gameCard/GameCard";
 import useFetchFree from "../../Fetch-freeToGame/useFetchFree";
 import "./GameSearch.css";
 import BasicDropdown from "../../../components-victor/dropdown/BasicDropdown";
-import dices from '../../../assets/icons/dices68.svg'
-import reset from '../../../assets/icons/reset2.png'
-import search from '../../../assets/icons/search.png'
-
+import dices from "../../../assets/icons/dices68.svg";
+import reset from "../../../assets/icons/reset2.png";
+import search from "../../../assets/icons/search.png";
 
 function GameSearch() {
-  const [showSearchInput, setShowSearchInput] = useState(false)
   const { data = [], error, isLoading } = useFetchFree();
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
@@ -29,13 +27,6 @@ function GameSearch() {
     setSearchQuery(e.target.value);
   }
 
-  function handleShowInput() {
-    if (showSearchInput) {
-
-    }
-    setShowSearchInput(!showSearchInput)
-  }
-
   function handleDropdownGenre(e) {
     setSelectedGenre(e.target.innerText);
   }
@@ -48,7 +39,7 @@ function GameSearch() {
   function handleRandomize(e) {
     setSelectedSort("");
     setTimeout(() => {
-      setSelectedSort("Randomize")
+      setSelectedSort("Randomize");
     }, 50);
   }
 
@@ -70,7 +61,7 @@ function GameSearch() {
         (genre) => !genre.includes("Action")
       );
 
-      const genreNoARPG = genreNoAction.filter((genre)=> genre !== "ARPG")
+      const genreNoARPG = genreNoAction.filter((genre) => genre !== "ARPG");
 
       genreNoARPG.push("Action Games");
 
@@ -126,7 +117,9 @@ function GameSearch() {
       // Apply genre filtering after sorting
       if (selectedGenre) {
         if (selectedGenre == "Action Games") {
-          filtered = filtered.filter((game) => game.genre.includes("Action") || game.genre === "ARPG");
+          filtered = filtered.filter(
+            (game) => game.genre.includes("Action") || game.genre === "ARPG"
+          );
         } else {
           filtered = filtered.filter((game) => game.genre === selectedGenre);
         }
@@ -190,20 +183,16 @@ function GameSearch() {
         </label>
 
         <div className="functionalities-wrapper">
-          <img className="search-icon" src={search} onClick={handleShowInput} alt="Search input" title="Search your games!"></img>
 
-            <div className={`search-input ${showSearchInput ? 'show' : 'hide'}`}>
-            {showSearchInput && (
-              <input
-                id="game-search"
-                type="text"
-                value={searchQuery}
-                onChange={handleSearchQuery}
-                placeholder="Search for a game..."
-              />
-               )}
-            </div>
-         
+          <div className={`search-input`}>
+            <input
+              id="game-search"
+              type="text"
+              value={searchQuery}
+              onChange={handleSearchQuery}
+              placeholder="Search for a game..."
+            />
+          </div>
 
           <div className="btn-wrapper">
             {genres.length ? (
@@ -218,8 +207,20 @@ function GameSearch() {
                   objectsArray={sortByFilter}
                   handleOnClick={handleDropdownSort}
                 />
-                <img className="dices-randomize" src={dices} onClick={handleRandomize} alt="Randomize" title="Randomize!"></img>
-                <img className="reset-spinner" src={reset} onClick={handleReset} alt="reset changes" title="Reset search!"></img>
+                <img
+                  className="dices-randomize"
+                  src={dices}
+                  onClick={handleRandomize}
+                  alt="Randomize"
+                  title="Randomize!"
+                ></img>
+                <img
+                  className="reset-spinner"
+                  src={reset}
+                  onClick={handleReset}
+                  alt="reset changes"
+                  title="Reset search!"
+                ></img>
               </div>
             ) : null}
           </div>
